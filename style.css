@@ -36,6 +36,10 @@ nav a:hover {
   background-color: #444;
   color: #ffd700;
 }
+nav a.active {
+  background-color: #007acc;  /* blue highlight */
+  color: #fff;                /* white text */
+}
 
 /* Page title */
 h1 {
