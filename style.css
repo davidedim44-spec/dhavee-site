@@ -14,11 +14,11 @@ nav {
   background: #333;
   padding: 10px;
   text-align: center;
-  position: fixed;   /* keeps it locked at the top */
-  top: 0;            /* position at the very top */
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%;       /* span across the page */
-  z-index: 1000;     /* ensures it stays above other elements */
+  width: 100%;
+  z-index: 1000;
 }
 
 /* Navigation links */
@@ -27,14 +27,14 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
-  padding: 8px 12px;       /* padding for button look */
-  border-radius: 4px;      /* rounded corners */
-  transition: 0.3s;        /* smooth hover effect */
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  background-color: #444;  /* dark gray highlight */
-  color: #ffd700;          /* gold text on hover */
+  background-color: #444;
+  color: #ffd700;
 }
 
 /* Page title */
