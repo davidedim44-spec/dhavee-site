@@ -20,6 +20,24 @@ nav {
   padding: 10px;
   text-align: center;
 }
+/* Fixed navigation bar */
+nav {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+  position: fixed;   /* keeps it locked at the top */
+  top: 0;            /* position at the very top */
+  left: 0;
+  width: 100%;       /* span across the page */
+  z-index: 1000;     /* ensures it stays above other elements */
+}
+
+/* Add spacing so content doesn’t hide behind the fixed nav */
+body {
+  margin: 0;
+  padding-top: 60px; /* adjust based on nav height */
+}
+
 nav a {
   color: #fff;
   margin: 0 15px;
