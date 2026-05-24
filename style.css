@@ -1,0 +1,71 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Research</title>
+  <meta name="description" content="Overview of philosophical traditions and key thinkers.">
+  <link rel="stylesheet" href="style.css">
+</head>
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navigation bar */
+nav {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #ffd700;
+}
+
+/* Page title */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #222;
+}
+
+/* Section cards */
+section {
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+section h2 a {
+  color: #333;
+  text-decoration: none;
+}
+section h2 a:hover {
+  color: #007acc;
+}
+
+/* Lists of thinkers */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  margin: 8px 0;
+}
+ul li a {
+  color: #007acc;
+  text-decoration: none;
+}
+ul li a:hover {
+  text-decoration: underline;
+}
