@@ -40,6 +40,20 @@ nav a {
 nav a:hover {
   color: #ffd700;
 }
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;       /* add padding so hover background looks like a button */
+  border-radius: 4px;      /* rounded corners */
+}
+
+nav a:hover {
+  background-color: #444;  /* dark gray highlight */
+  color: #ffd700;          /* gold text on hover */
+  transition: 0.3s;        /* smooth fade effect */
+}
 
 /* Page title */
 h1 {
