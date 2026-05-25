@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://davidedim44-spec.github.io/dhavee-site/sitemap.xml
