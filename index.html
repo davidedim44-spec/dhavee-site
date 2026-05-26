@@ -77,5 +77,18 @@
   <footer class="bg-secondary">
     <p class="text-small">© 2026 Dhavée Research Hub · All rights reserved.</p>
   </footer>
+  <script>
+  // Highlight the current page link in the nav
+  document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll("nav a");
+    const currentUrl = window.location.href;
+
+    navLinks.forEach(link => {
+      if (currentUrl.includes(link.getAttribute("href"))) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
 </body>
 </html>
