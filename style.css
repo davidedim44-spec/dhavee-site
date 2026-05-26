@@ -46,6 +46,12 @@ nav {
   z-index: 1000;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
+nav a.active {
+  font-weight: bold;
+  color: #ffd700; /* accent color */
+  border-bottom: 2px solid #ffd700;
+}
+
 
 nav a {
   color: #fff;
