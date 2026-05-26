@@ -1,97 +1,58 @@
 <!DOCTYPE html>
-<html>
- <head>
-    <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact | [David Edim] Portfolio</title>
-   <head> google-site-verification=aGAZIAREXpW_4K6Z9EX0MpQnL3HuBKWUPkcaxgFvE_4</head>
-    <meta name="description" content="Get in touch with [Your Name], web developer in Oyo State.">
-    <meta name="keywords" content="contact, web developer, Oyo State, portfolio, [Your Name]">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Contact – David Edim Portfolio</title>
+  <meta name="description" content="Get in touch with David Edim, web developer in Oyo State.">
+  <meta name="keywords" content="contact, web developer, Oyo State, portfolio, David Edim">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Main heading -->
-    <h1>Contact [David Edim] – Web Developer in Oyo State</h1>
+  <header>
+    <h1>Contact David Edim – Web Developer in Oyo State</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="research.html">Research</a> |
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Sub‑sections -->
-    <h2>Get in Touch</h2>
-    <p>Fill out the form below to reach me directly.</p>
+  <main>
+    <section>
+      <h2>Get in Touch</h2>
+      <p>Fill out the form below to reach me directly.</p>
 
-    <h2>Other Ways to Connect</h2>
-    <h3>Email</h3>
-    <p>davidedim44@gmail.com</p>
+      <!-- Formspree integration -->
+      <form action="https://formspree.io/f/xbdbalrq" method="POST">
+        <input type="hidden" name="_redirect" value="https://davidedim44-spec.github.io/dhavee-site/thankyou.html">
 
-    <h3>LinkedIn</h3>
-    <p><a href="https://linkedin.com/in/yourprofile">Visit my LinkedIn</a></p>
-</body>
-</html>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required minlength="2"><br><br>
 
-    <Home>portfolio | [David Edim] Portfolio</Home>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-    <title>Contact page</title>
- </head>   
- <body>
-    <h1>Contact Me</h1>
-    <p>You can reach me at: davidedim44@gmail.com</p>
- </body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Contact Me</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required minlength="10"></textarea><br><br>
 
-    <main>
-        <section>
-            <form>
-                <input type="text" id="name" name="name" required minlength="2">
-<input type="email" id="email" name="email" required>
-<textarea id="message" name="message" required minlength="10"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+    <section>
+      <h2>Other Ways to Connect</h2>
+      <h3>Email</h3>
+      <p><a href="mailto:davidedim44@gmail.com">davidedim44@gmail.com</a></p>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+      <h3>LinkedIn</h3>
+      <p><a href="https://linkedin.com/in/yourprofile" target="_blank">Visit my LinkedIn</a></p>
+    </section>
+  </main>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-    <section><form action="send.php" method="post">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" required></textarea><br><br>
-    <input type="text" name="website" style="display:none;">
-
-
-    <input type="submit" value="Send">
-</form>
-</section>
-
-
-    <footer>
-        <p>&copy; 2026 My Website</p>
-    </footer>
+  <footer>
+    <p>&copy; 2026 David Edim Portfolio · All rights reserved.</p>
+  </footer>
 </body>
 </html>
