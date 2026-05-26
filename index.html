@@ -93,10 +93,19 @@
   document.addEventListener("DOMContentLoaded", function() {
     const toggle = document.querySelector(".nav-toggle");
     const navLinks = document.querySelector(".nav-links");
+    const overlay = document.querySelector(".nav-overlay");
 
     toggle.addEventListener("click", () => {
       navLinks.classList.toggle("active");
-      toggle.classList.toggle("active"); // switch icons
+      toggle.classList.toggle("active");
+      overlay.classList.toggle("active");
+    });
+
+    // Close menu when overlay is clicked
+    overlay.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      toggle.classList.remove("active");
+      overlay.classList.remove("active");
     });
 
     // Highlight current page link
@@ -109,6 +118,7 @@
     });
   });
 </script>
+
 
 </body>
 </html>
