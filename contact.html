@@ -4,83 +4,7 @@
   <meta charset="UTF-8">
   <title>Contact Dhavée Research Hub</title>
   <meta name="description" content="Reach out to Dhavée Research Hub for inquiries, collaborations, or philosophical discussions.">
-  <style>
-    nav {
-      background-color: #333;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      padding: 8px 12px;
-      border-radius: 4px;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      background-color: #444;
-      color: yellow;
-    }
-    h1 {
-      text-align: center;
-      margin-top: 20px;
-      color: #222;
-    }
-    p {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    img.hero {
-      display: block;
-      margin: 0 auto 20px;
-      max-width: 400px;
-      border-radius: 8px;
-    }
-    form {
-      margin: 20px auto;
-      max-width: 600px;
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    label {
-      display: block;
-      margin: 10px 0 5px;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    button {
-      background-color: #333;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-    button:hover {
-      background-color: yellow;
-      color: black;
-    }
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-      font-size: 0.9em;
-    }
-    footer p {
-      margin: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav>
@@ -90,26 +14,30 @@
     <a href="contact.html" class="active">Contact</a>
   </nav>
 
-  <h1>Contact the Research Hub</h1>
-  <p>Fill out the form below to get in touch:</p>
+  <main>
+    <div class="container">
+      <h1>Contact the Research Hub</h1>
+      <p>Fill out the form below to get in touch:</p>
 
-  <!-- Welcoming image -->
-  <img src="images/person-writing.jpg" alt="Person writing notes" class="hero">
+      <!-- Welcoming image -->
+      <img src="images/person-writing.jpg" alt="Person writing notes" class="hero">
 
-  <form action="https://formspree.io/f/xbdbalrq" method="POST">
-    <input type="hidden" name="_redirect" value="https://davidedim44-spec.github.io/dhavee-site/thankyou.html">
+      <form action="https://formspree.io/f/xbdbalrq" method="POST">
+        <input type="hidden" name="_redirect" value="https://davidedim44-spec.github.io/dhavee-site/thankyou.html">
 
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name" required>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <label for="email">Your Email:</label>
-    <input type="email" id="email" name="email" required>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-    <button type="submit">Send</button>
-  </form>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </main>
 
   <footer>
     <p>© 2026 Research Hub · All rights reserved.</p>
