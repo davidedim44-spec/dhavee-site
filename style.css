@@ -171,9 +171,15 @@ main section {
     display: block;
     margin: 8px 0;
   }
+/* Hero banner styling */
+img.hero {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
 
-  img.hero {
-    max-width: 100%;
-    height: auto;
-  }
+
 }
