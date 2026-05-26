@@ -8,6 +8,31 @@ body {
   line-height: 1.6;
   padding-top: 60px; /* space for fixed nav */
 }
+/* Text alignment */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Text size */
+.text-small { font-size: 0.9em; }
+.text-large { font-size: 1.3em; }
+.text-xlarge { font-size: 1.6em; }
+
+/* Text emphasis */
+.text-bold { font-weight: bold; }
+.text-italic { font-style: italic; }
+.text-uppercase { text-transform: uppercase; }
+.text-lowercase { text-transform: lowercase; }
+.text-capitalize { text-transform: capitalize; }
+
+/* Heading styles */
+.heading-style {
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  color: #007acc; /* primary color */
+  margin-bottom: 10px;
+}
+
 
 /* Fixed navigation bar */
 nav {
