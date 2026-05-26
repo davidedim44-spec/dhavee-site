@@ -161,6 +161,27 @@ nav {
 .nav-toggle.active .icon-close {
   display: inline;
 }
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: -250px; /* start off-screen */
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    box-shadow: -2px 0 6px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+    z-index: 10;
+  }
+
+  .nav-links.active {
+    display: flex;
+    right: 0; /* slide into view */
+  }
+}
 
 
 /* Mobile styles */
