@@ -150,6 +150,18 @@ nav {
   border: none;
   cursor: pointer;
 }
+.nav-toggle .icon-close {
+  display: none;
+}
+
+.nav-toggle.active .icon-open {
+  display: none;
+}
+
+.nav-toggle.active .icon-close {
+  display: inline;
+}
+
 
 /* Mobile styles */
 @media (max-width: 768px) {
