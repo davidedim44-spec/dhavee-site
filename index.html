@@ -20,21 +20,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <header>
-  <nav aria-label="Main navigation">
-    <!-- Hamburger toggle button (hidden on desktop) -->
-    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+  <header>
+    <nav aria-label="Main navigation">
+      <!-- Hamburger toggle button (hidden on desktop) -->
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
 
-    <!-- Navigation links -->
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="research.html">Research</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
-</header>
-
+      <!-- Navigation links -->
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
 
   <main>
     <div class="container">
@@ -84,18 +83,26 @@
   <footer class="bg-secondary">
     <p class="text-small">© 2026 Dhavée Research Hub · All rights reserved.</p>
   </footer>
-  <script>
-  // Highlight the current page link in the nav
-  document.addEventListener("DOMContentLoaded", function() {
-    const navLinks = document.querySelectorAll("nav a");
-    const currentUrl = window.location.href;
 
-    navLinks.forEach(link => {
-      if (currentUrl.includes(link.getAttribute("href"))) {
-        link.classList.add("active");
-      }
+  <!-- Navigation toggle + active link script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      // Highlight current page link
+      const links = document.querySelectorAll("nav a");
+      const currentUrl = window.location.href;
+      links.forEach(link => {
+        if (currentUrl.includes(link.getAttribute("href"))) {
+          link.classList.add("active");
+        }
+      });
     });
-  });
-</script>
+  </script>
 </body>
 </html>
