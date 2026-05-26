@@ -89,24 +89,26 @@
   </footer>
 
   <!-- Navigation toggle + active link script -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const toggle = document.querySelector(".nav-toggle");
-      const navLinks = document.querySelector(".nav-links");
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const toggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
 
-      toggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-
-      // Highlight current page link
-      const links = document.querySelectorAll("nav a");
-      const currentUrl = window.location.href;
-      links.forEach(link => {
-        if (currentUrl.includes(link.getAttribute("href"))) {
-          link.classList.add("active");
-        }
-      });
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      toggle.classList.toggle("active"); // switch icons
     });
-  </script>
+
+    // Highlight current page link
+    const links = document.querySelectorAll("nav a");
+    const currentUrl = window.location.href;
+    links.forEach(link => {
+      if (currentUrl.includes(link.getAttribute("href"))) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
