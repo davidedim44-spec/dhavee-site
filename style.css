@@ -51,6 +51,27 @@ nav a.active {
   color: #ffd700; /* accent color */
   border-bottom: 2px solid #ffd700;
 }
+/* Navigation links */
+nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+  color: #007acc; /* primary color */
+  border-bottom: 2px solid #007acc;
+}
+
+/* Active link */
+nav a.active {
+  font-weight: bold;
+  color: #ffd700; /* accent color */
+  border-bottom: 2px solid #ffd700;
+}
+
 
 
 nav a {
