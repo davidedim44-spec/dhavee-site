@@ -11,13 +11,13 @@
     margin: 40px 0;
   }
   .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
+    padding: 0 20px;
   }
   .gallery img {
-    width: 250px;
+    width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
