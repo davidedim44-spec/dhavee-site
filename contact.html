@@ -22,11 +22,21 @@
 <body>
   <header>
     <nav aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="research.html">Research</a>
-      <a href="contact.html" class="active">Contact</a>
+      <!-- Hamburger toggle button -->
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="icon-open">☰</span>
+        <span class="icon-close">✖</span>
+      </button>
+
+      <!-- Navigation links -->
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
+    <div class="nav-overlay"></div>
   </header>
 
   <main>
@@ -75,5 +85,37 @@
   <footer class="bg-secondary">
     <p class="text-small">© 2026 Dhavée Research Hub · All rights reserved.</p>
   </footer>
+
+  <!-- Navigation toggle + active link script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      const overlay = document.querySelector(".nav-overlay");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        toggle.classList.toggle("active");
+        overlay.classList.toggle("active");
+        document.body.classList.toggle("menu-open");
+      });
+
+      overlay.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        toggle.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.classList.remove("menu-open");
+      });
+
+      // Highlight current page link
+      const links = document.querySelectorAll("nav a");
+      const currentUrl = window.location.href;
+      links.forEach(link => {
+        if (currentUrl.includes(link.getAttribute("href"))) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
 </body>
 </html>
