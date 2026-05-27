@@ -8,6 +8,12 @@ body {
   line-height: 1.6;
   padding-top: 60px; /* space for fixed nav */
 }
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
 body.menu-open {
   overflow: hidden; /* prevent background scroll */
 }
