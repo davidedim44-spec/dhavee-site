@@ -15,6 +15,21 @@ h1, h2, h3 {
   border-radius: 8px;
   margin: 20px 0;
 }
+.gallery img {
+  width: 100%;
+  height: 250px;   /* or any fixed height you prefer */
+  object-fit: cover; /* crops the image to fit nicely */
+}
+.gallery figure {
+  aspect-ratio: 4 / 3; /* keeps all images same ratio */
+  overflow: hidden;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .contact-form {
   max-width: 500px;
   margin: 0 auto;
