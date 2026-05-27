@@ -3,18 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Dhavée Research Hub – Thank You</title>
-  <meta name="description" content="Thank you for reaching out to Dhavée Research Hub. We appreciate your message and will respond soon.">
-  <meta name="keywords" content="Dhavée Research Hub, thank you, message received, contact confirmation">
+  <meta name="description" content="Thank you for contacting Dhavée Research Hub.">
   <meta name="author" content="David Edim">
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  <!-- Social Sharing (Open Graph) -->
-  <meta property="og:title" content="Dhavée Research Hub – Thank You">
-  <meta property="og:description" content="Your message has been received by Dhavée Research Hub. We’ll respond shortly.">
-  <meta property="og:image" content="images/cosmos.jpg">
-  <meta property="og:url" content="https://davidedim44-spec.github.io/dhavee-site/thankyou.html">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -22,46 +15,69 @@
 <body>
   <header>
     <nav aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="research.html">Research</a>
-      <a href="contact.html">Contact</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="icon-open">☰</span>
+        <span class="icon-close">✖</span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
+    <div class="nav-overlay"></div>
   </header>
 
   <main>
     <div class="container">
-
-      <!-- Banner -->
       <div class="banner">
         <h1>Thank You!</h1>
-        <p>Your message has been successfully sent to Dhavée Research Hub.</p>
+        <p>Your message has been sent successfully. We’ll get back to you within 48 hours.</p>
       </div>
 
-      <!-- Hero image -->
-      <img src="images/cosmos.jpg" alt="Cosmos night sky symbolizing exploration" class="hero">
-
-      <!-- Confirmation Card -->
       <div class="card">
-        <div class="card-header">We Appreciate Your Interest</div>
-        <div class="card-body">
-          <p>Our team will review your message and respond within 48 hours. 
-             In the meantime, feel free to continue exploring our research topics and resources.</p>
+        <div class="card-body text-center">
           <a href="index.html" class="btn btn-primary">Return to Home</a>
-          <a href="research.html" class="btn btn-secondary">Explore Research</a>
         </div>
       </div>
-
-      <!-- Callout -->
-      <div class="callout">
-        “Thank you for joining us in the pursuit of wisdom.”
-      </div>
-
     </div>
   </main>
 
   <footer class="bg-secondary">
     <p class="text-small">© 2026 Dhavée Research Hub · All rights reserved.</p>
   </footer>
+
+  <!-- Navigation script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      const overlay = document.querySelector(".nav-overlay");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        toggle.classList.toggle("active");
+        overlay.classList.toggle("active");
+        document.body.classList.toggle("menu-open");
+      });
+
+      overlay.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        toggle.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.classList.remove("menu-open");
+      });
+
+      // Highlight current page link
+      const links = document.querySelectorAll("nav a");
+      const currentUrl = window.location.href;
+      links.forEach(link => {
+        if (currentUrl.includes(link.getAttribute("href"))) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
 </body>
 </html>
