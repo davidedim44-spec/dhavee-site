@@ -100,6 +100,7 @@
       navLinks.classList.toggle("active");
       toggle.classList.toggle("active");
       overlay.classList.toggle("active");
+      document.body.classList.toggle("menu-open"); // disable/enable scroll
     });
 
     // Close menu when overlay is clicked
@@ -107,6 +108,8 @@
       navLinks.classList.remove("active");
       toggle.classList.remove("active");
       overlay.classList.remove("active");
+      document.body.classList.remove("menu-open");
+     
     });
 
     // Highlight current page link
