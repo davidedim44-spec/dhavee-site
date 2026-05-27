@@ -15,6 +15,19 @@ h1, h2, h3 {
   border-radius: 8px;
   margin: 20px 0;
 }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;       /* fixed height for all images */
+  object-fit: cover;   /* crops images neatly without distortion */
+  border-radius: 8px;  /* optional: rounded corners */
+}
+
 .gallery img {
   width: 100%;
   height: 250px;   /* or any fixed height you prefer */
