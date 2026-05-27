@@ -8,6 +8,10 @@ body {
   line-height: 1.6;
   padding-top: 60px; /* space for fixed nav */
 }
+body.menu-open {
+  overflow: hidden; /* prevent background scroll */
+}
+
 /* Text alignment */
 .text-center { text-align: center; }
 .text-left { text-align: left; }
